@@ -9,7 +9,6 @@ body, html {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  z-index: 0;
 }
 
 .content {
@@ -28,4 +27,14 @@ body, html {
 hr {
   margin: auto;
   width: 50%;
+}
+
+footer{
+  bottom: 20px;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: white;
 }
