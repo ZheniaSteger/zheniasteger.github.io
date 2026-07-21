@@ -1,27 +1,312 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <title>Zhenia Steger</title>
-    <meta charset="utf-8">
-    <link href="./resources/css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-  </head>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <script>document.documentElement.className = "js";</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zhenia — Software Engineer &amp; DevSecOps Lead</title>
+  <meta name="description" content="Zhenia — Software Engineer and DevSecOps Lead. Building secure, resilient systems and the pipelines that ship them." />
+  <meta name="author" content="Zhenia Steger" />
+  <meta name="theme-color" content="#0b0f17" />
+  <link rel="canonical" href="https://zheniasteger.github.io/" />
 
-  <body>
-    <video autoplay loop muted id="backVid">
-      <source src="./resources/videos/pexels2833.mp4" type="video/mp4">
-    </video>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Zhenia — Software Engineer &amp; DevSecOps Lead" />
+  <meta property="og:description" content="Building secure, resilient systems and the pipelines that ship them." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://zheniasteger.github.io/" />
+  <meta property="og:site_name" content="zhenia.dev" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="https://zheniasteger.github.io/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Zhenia — Software Engineer & DevSecOps Lead. Secure systems and the pipelines that ship them." />
 
-      <div class="content">
-        <h1>Zhenia Steger</h1>
-        <hr>
-        <h3>Check out my github...</h3>
-        <a href="https://github.com/ZheniaSteger"><i class="fab fa-github fa-5x"></i></a>
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Zhenia — Software Engineer &amp; DevSecOps Lead" />
+  <meta name="twitter:description" content="Building secure, resilient systems and the pipelines that ship them." />
+  <meta name="twitter:image" content="https://zheniasteger.github.io/assets/og-image.png" />
+  <meta name="twitter:image:alt" content="Zhenia — Software Engineer & DevSecOps Lead." />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2300e0c6'/%3E%3Ctext x='50' y='68' font-size='58' font-family='monospace' font-weight='bold' text-anchor='middle' fill='%230b0f17'%3EZ%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Zhenia Steger",
+    "givenName": "Zhenia",
+    "familyName": "Steger",
+    "url": "https://zheniasteger.github.io/",
+    "image": "https://zheniasteger.github.io/assets/og-image.png",
+    "email": "mailto:zhenia.steger@gmail.com",
+    "jobTitle": "DevSecOps Lead",
+    "description": "Software Engineer and DevSecOps Lead building secure, resilient systems and the pipelines that ship them.",
+    "knowsAbout": ["DevSecOps", "Application Security", "CI/CD", "Supply-chain security", "Kubernetes", "Cloud infrastructure", "Python", "Go"],
+    "sameAs": [
+      "https://www.linkedin.com/in/zsteger/",
+      "https://github.com/ZheniaSteger"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#top">
+        <span class="brand-mark">Z</span>
+        <span class="brand-text">zhenia<span class="accent">.dev</span></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#focus">Focus</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow reveal">DevSecOps Engineer · Building toward AI</p>
+        <h1 class="hero-title reveal">
+          Hi, I'm <span class="accent">Zhenia</span>.<br />
+          I build secure systems<br />and the pipelines that ship them.
+        </h1>
+        <p class="hero-sub reveal">
+          I lead DevSecOps in the defense sector - embedding security into every stage
+          of the software lifecycle, automating the boring-but-critical parts, and
+          helping engineering teams move fast without breaking trust. Now I'm channeling
+          that same rigor into AI: learning how to build and secure the pipelines that
+          take machine learning from prototype to production.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+          <a href="#experience" class="btn btn-ghost">See what I do</a>
+        </div>
+        <ul class="hero-stats reveal">
+          <li><strong data-count="8">8+</strong><span>years shipping software</span></li>
+          <li><strong data-count="100">100%</strong><span>pipelines as code</span></li>
+          <li><strong>Sec</strong><span>built in, not bolted on</span></li>
+        </ul>
       </div>
+      <div class="hero-glow" aria-hidden="true"></div>
+    </section>
 
-    <footer>
-      <span>(Zhenia Steger - 2020)</span>
-    </footer>
-  </body>
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container grid-2">
+        <div class="reveal">
+          <p class="section-eyebrow">// about</p>
+          <h2 class="section-title">Engineering security in, from day one</h2>
+        </div>
+        <div class="about-body reveal">
+          <p>
+            I'm a software engineer who grew into a DevSecOps leadership role. My day-to-day
+            sits at the intersection of <strong>development, security, and operations</strong> -
+            designing the systems and the guardrails that let teams deliver software that's
+            trustworthy by default.
+          </p>
+          <p>
+            I care about the unglamorous things that make engineering organizations resilient:
+            reproducible builds, signed artifacts, least-privilege everything, fast feedback,
+            and incident response that doesn't rely on heroics. I believe the best security
+            is the kind developers barely notice because it's built into the path of least
+            resistance.
+          </p>
+          <p>
+            I still write code daily - mostly C++ and Python - review architecture, and keep
+            my hands on the tools. I'm happiest turning a fragile, manual process into something
+            automated, observable, and boring.
+          </p>
+          <p>
+            Right now I'm focused on the next frontier: bringing DevSecOps discipline to
+            <strong>AI and machine learning</strong>. Securing model and data pipelines,
+            hardening the infrastructure that serves them, and treating ML systems with the
+            same rigor I'd apply to any critical workload.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-eyebrow">// skills</p>
+          <h2 class="section-title">What I work with</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="card reveal">
+            <h3>Security &amp; DevSecOps</h3>
+            <ul class="tag-list">
+              <li>SAST / DAST</li>
+              <li>SCA &amp; SBOM</li>
+              <li>Threat Modeling</li>
+              <li>Secrets Management</li>
+              <li>Supply-chain Security</li>
+              <li>Zero-trust</li>
+              <li>Vulnerability Mgmt</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <h3>CI/CD &amp; Automation</h3>
+            <ul class="tag-list">
+              <li>Github Actions</li>
+              <li>GitLab CI</li>
+              <li>Nexus</li>
+              <li>Pipelines as Code</li>
+              <li>Policy as Code (OPA)</li>
+              <li>Artifact Signing</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <h3>Cloud &amp; Infrastructure</h3>
+            <ul class="tag-list">
+              <li>Kubernetes</li>
+              <li>Docker</li>
+              <li>Terraform</li>
+              <li>AWS / Azure</li>
+              <li>Linux</li>
+              <li>Observability</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <h3>Engineering</h3>
+            <ul class="tag-list">
+              <li>C++</li>
+              <li>Python</li>
+              <li>Bash</li>
+              <li>Ansible</li>
+              <li>APIs &amp; Services</li>
+              <li>System Design</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-eyebrow">// experience</p>
+          <h2 class="section-title">Career so far</h2>
+        </div>
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <p class="timeline-period">Present</p>
+              <h3>DevSecOps Lead</h3>
+              <p class="timeline-org">Defense sector</p>
+              <p>
+                Lead the DevSecOps practice: defining secure-by-default pipelines, mentoring
+                engineers, and bridging development and security teams. Own the strategy for
+                automated security testing, compliance, and the tooling that keeps delivery
+                fast and auditable.
+              </p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <p class="timeline-period">Earlier</p>
+              <h3>Software Engineer</h3>
+              <p class="timeline-org">Software &amp; platform teams</p>
+              <p>
+                Designed and built backend services, internal tooling, and automation. Moved
+                progressively toward platform and security work — owning CI/CD, infrastructure
+                as code, and the reliability of the systems I shipped.
+              </p>
+            </div>
+          </li>
+        </ol>
+        <p class="muted reveal">A detailed CV is available on request.</p>
+      </div>
+    </section>
+
+    <!-- Focus / principles -->
+    <section id="focus" class="section section-alt">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-eyebrow">// how i work</p>
+          <h2 class="section-title">Principles I lead by</h2>
+        </div>
+        <div class="focus-grid">
+          <article class="focus-card reveal">
+            <span class="focus-num">01</span>
+            <h3>Shift left, shield right</h3>
+            <p>Catch issues at the keyboard, not in production - but assume breach and design defense in depth anyway.</p>
+          </article>
+          <article class="focus-card reveal">
+            <span class="focus-num">02</span>
+            <h3>Automate the critical path</h3>
+            <p>If a control is manual, it's optional. Security that scales is security that's codified and enforced by the pipeline.</p>
+          </article>
+          <article class="focus-card reveal">
+            <span class="focus-num">03</span>
+            <h3>Make the secure way the easy way</h3>
+            <p>Developers ship faster when guardrails are paved roads, not roadblocks. Friction is a vulnerability.</p>
+          </article>
+          <article class="focus-card reveal">
+            <span class="focus-num">04</span>
+            <h3>Measure, don't assume</h3>
+            <p>Observability, SBOMs, and audit trails turn "we think we're secure" into evidence you can stand behind.</p>
+          </article>
+          <article class="focus-card reveal">
+            <span class="focus-num">05</span>
+            <h3>Trust the supply chain you built</h3>
+            <p>A system is only as trustworthy as its weakest dependency. Sign what you ship, verify what you pull, and know exactly what's in production.</p>
+          </article>
+          <article class="focus-card reveal">
+            <span class="focus-num">06</span>
+            <h3>Security is a team sport</h3>
+            <p>Guardrails stick when engineers own them. I'd rather coach a team to ship securely than be the gate everyone learns to route around.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container contact-inner reveal">
+        <p class="section-eyebrow">// contact</p>
+        <h2 class="section-title">Let's talk</h2>
+        <p class="contact-sub">
+          Open to interesting problems in secure software delivery, platform engineering,
+          and DevSecOps leadership. The best way to reach me is email.
+        </p>
+        <a class="btn btn-primary btn-lg" id="email-btn" href="#">Show email address</a>
+        <ul class="social-links">
+          <li><a href="https://www.linkedin.com/in/zsteger/" data-social="linkedin" rel="noopener" target="_blank">LinkedIn</a></li>
+          <li><a href="https://github.com/ZheniaSteger" data-social="github" rel="noopener" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Zhenia</span>
+      <a href="#top" class="to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js" defer></script>
+</body>
 </html>
