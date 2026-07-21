@@ -100,7 +100,7 @@ a { color: inherit; text-decoration: none; }
   border-radius: 9px;
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
   color: #04221e;
-  font-family: monospace;
+  font-family: "JetBrains Mono", monospace;
   font-weight: 700;
 }
 .brand-text { font-size: 1.05rem; }
